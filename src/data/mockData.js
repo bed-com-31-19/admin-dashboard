@@ -1,20 +1,21 @@
 export const mockDataTeam = [
   {
     id: 1,
-    name: "Jon Snow",
-    email: "jonsnow@gmail.com",
-    age: 35,
-    phone: "(665)121-5454",
+    name: "Resten Madzalo",
+    email: "madzaloresten8@gmail.com",
+    age: 22,
+    phone: "(265) 888 234 314",
     access: "admin",
   },
   {
     id: 2,
-    name: "Cersei Lannister",
-    email: "cerseilannister@gmail.com",
-    age: 42,
-    phone: "(421)314-2288",
+    name: "Mirriam Yambeni",
+    email: "mirriamyambeni@gmail.com",
+    age: 22,
+    phone: "(265) 994 149 258",
     access: "manager",
   },
+
   {
     id: 3,
     name: "Jaime Lannister",
