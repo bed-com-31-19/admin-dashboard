@@ -6,12 +6,12 @@ import SideBar from "./scenes/global/SideBar";
 import Dashboard from "./scenes/dashboard/Dashboard";
 import Team from "./scenes/team/Team";
 // import Invoice from "./scenes/invoices/Invoice";
-// import Contact from "./scenes/contacts/Contact";
 // import Bar from "./scenes/Bar";
 // import Line from "./scenes/Line";
 // import Pie from "./scenes/Pie";
 // import Calendar from "./scenes/Calendar";
 import { Routes, Route } from "react-router-dom";
+import Contact from "./scenes/contacts/Contact";
 
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/team" element={<Team />} />
-              {/* <Route path="/contacts" element={<Contact/>} /> */}
+              <Route path="/contacts" element={<Contact/>} />
               {/* <Route path="/invoices" element={<Invoice />} /> */}
               {/* <Route path="/form" element={<Form />} /> */}
               {/* <Route path="/bar" element={<Bar />} /> */}
