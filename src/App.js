@@ -1,17 +1,17 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import TopBar from "./scenes/global/TopBar";
 import SideBar from "./scenes/global/SideBar";
 import Dashboard from "./scenes/dashboard/Dashboard";
 import Team from "./scenes/team/Team";
+import Contact from "./scenes/contacts/Contact";
 // import Invoice from "./scenes/invoices/Invoice";
 // import Bar from "./scenes/Bar";
 // import Line from "./scenes/Line";
 // import Pie from "./scenes/Pie";
 // import Calendar from "./scenes/Calendar";
-import { Routes, Route } from "react-router-dom";
-import Contact from "./scenes/contacts/Contact";
 
 
 function App() {
