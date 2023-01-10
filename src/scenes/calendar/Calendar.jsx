@@ -113,14 +113,10 @@ const Calendar = () => {
             initialEvents={[
               {
                 id: "1234",
-                title: "All day event",
-                date: "2023-06-06",
+                title: "Programmer's Birthday",
+                date: "2023-07-04",
               },
-              {
-                id: "134",
-                title: "party",
-                date: "2023-06-19",
-              },
+              
             ]}
           />
         </Box>
