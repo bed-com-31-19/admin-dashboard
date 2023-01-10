@@ -15,7 +15,6 @@ import {
 } from "@mui/material";
 import Header from "../../components/Header";
 import { tokens } from "../../theme";
-import { TryRounded } from "@mui/icons-material";
 
 const Calendar = () => {
   const theme = useTheme();
@@ -60,7 +59,7 @@ const Calendar = () => {
         >
           <Typography variant="h5">Events</Typography>
           <List>
-            {currentEvents.map((event) => {
+            {currentEvents.map((event) => (
               <ListItem
                 key={event.id}
                 sx={{
@@ -81,13 +80,13 @@ const Calendar = () => {
                     </Typography>
                   }
                 />
-              </ListItem>;
-            })}
+              </ListItem>
+            ))}
           </List>
         </Box>
 
         {/* Calendar */}
-        <Box dlex="1 1 100%" ml="15px">
+        <Box flex="1 1 100%" ml="15px">
           <FullCalendar
             height="75vh"
             plugins={[
@@ -111,6 +110,18 @@ const Calendar = () => {
             eventsSet={(events) => {
               setCurrentEvents(events);
             }}
+            initialEvents={[
+              {
+                id: "1234",
+                title: "All day event",
+                date: "2023-06-06",
+              },
+              {
+                id: "134",
+                title: "party",
+                date: "2023-06-19",
+              },
+            ]}
           />
         </Box>
       </Box>
