@@ -51,18 +51,16 @@ const Dashboard = () => {
           display="flex"
           alignItems="center"
           justifyContent="center"
+          borderRadius="4px"
         >
-          <StartBox
+          <StatBox
             title="12,361"
             subtitle="Emails Sent"
             progress="0.75"
-            increase="14%"
+            increase="+14%"
             icon={
               <EmailIcon
-                sx={{
-                  color: colors.greenAccent[600],
-                  fontSize: "26px",
-                }}
+                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
               />
             }
           />
@@ -73,6 +71,7 @@ const Dashboard = () => {
           display="flex"
           alignItems="center"
           justifyContent="center"
+          borderRadius="4px"
         >
           <StartBox
             title="431,221"
@@ -95,6 +94,7 @@ const Dashboard = () => {
           display="flex"
           alignItems="center"
           justifyContent="center"
+          borderRadius="4px"
         >
           <StartBox
             title="32,441"
@@ -117,6 +117,7 @@ const Dashboard = () => {
           display="flex"
           alignItems="center"
           justifyContent="center"
+          borderRadius="4px"
         >
           <StartBox
             title="1,325,134"
@@ -133,6 +134,8 @@ const Dashboard = () => {
             }
           />
         </Box>
+
+        {/*  */}
       </Box>
     </Box>
   );
