@@ -12,6 +12,7 @@ import GeographyChart from "../../components/GeographyChart";
 import BarChart from "../../components/BarChart";
 import StatBox from "../../components/StartBox";
 import ProgressCircle from "../../components/ProgressCircle";
+import StartBox from "../../components/StartBox";
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -20,6 +21,118 @@ const Dashboard = () => {
     <Box m="20px">
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
+        <Box>
+          <Button
+            sx={{
+              backgroundColor: colors.blueAccent[700],
+              color: colors.grey[100],
+              fontSize: "14px",
+              fontWeight: "bold",
+              padding: "10px 20px",
+            }}
+          >
+            <DownloadOutlinedIcon sx={{ mr: "" }} />
+            Download Reports
+          </Button>
+        </Box>
+      </Box>
+
+      {/* GRID & CHARTS */}
+      <Box
+        display="grid"
+        gridTemplateColumns="repeat(12, 1fr)"
+        gridAutoRows="140px"
+        gap="20px"
+      >
+        {/* ROW 1 */}
+        <Box
+          gridColumn="span 3"
+          backgroundColor={colors.primary[400]}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <StartBox
+            title="12,361"
+            subtitle="Emails Sent"
+            progress="0.75"
+            increase="14%"
+            icon={
+              <EmailIcon
+                sx={{
+                  color: colors.greenAccent[600],
+                  fontSize: "26px",
+                }}
+              />
+            }
+          />
+        </Box>
+        <Box
+          gridColumn="span 3"
+          backgroundColor={colors.primary[400]}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <StartBox
+            title="12,361"
+            subtitle="Emails Sent"
+            progress="0.75"
+            increase="14%"
+            icon={
+              <EmailIcon
+                sx={{
+                  color: colors.greenAccent[600],
+                  fontSize: "26px",
+                }}
+              />
+            }
+          />
+        </Box>
+        <Box
+          gridColumn="span 3"
+          backgroundColor={colors.primary[400]}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <StartBox
+            title="12,361"
+            subtitle="Emails Sent"
+            progress="0.75"
+            increase="14%"
+            icon={
+              <EmailIcon
+                sx={{
+                  color: colors.greenAccent[600],
+                  fontSize: "26px",
+                }}
+              />
+            }
+          />
+        </Box>
+        <Box
+          gridColumn="span 3"
+          backgroundColor={colors.primary[400]}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <StartBox
+            title="12,361"
+            subtitle="Emails Sent"
+            progress="0.75"
+            increase="14%"
+            icon={
+              <EmailIcon
+                sx={{
+                  color: colors.greenAccent[600],
+                  fontSize: "26px",
+                }}
+              />
+            }
+          />
+        </Box>
       </Box>
     </Box>
   );
