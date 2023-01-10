@@ -15,6 +15,7 @@ import {
 } from "@mui/material";
 import Header from "../../components/Header";
 import { tokens } from "../../theme";
+import { TryRounded } from "@mui/icons-material";
 
 const Calendar = () => {
   const theme = useTheme();
@@ -35,8 +36,6 @@ const Calendar = () => {
       });
     }
   };
-
-  
 
   const handleEventClick = (selected) => {
     if (
@@ -85,6 +84,34 @@ const Calendar = () => {
               </ListItem>;
             })}
           </List>
+        </Box>
+
+        {/* Calendar */}
+        <Box dlex="1 1 100%" ml="15px">
+          <FullCalendar
+            height="75vh"
+            plugins={[
+              dayGridPlugin,
+              timeGridPlugin,
+              interactionPlugin,
+              listPlugin,
+            ]}
+            headerToolbar={{
+              left: "prev,next,today",
+              center: "title",
+              right: "dayGridMonth,timeGridWeek,timeGridDay,listMonth",
+            }}
+            initialView="dayGridMonth"
+            editable={true}
+            selectable={true}
+            selectMirror={true}
+            dayMaxEvents={true}
+            select={handleDateClick}
+            eventClick={handleEventClick}
+            eventsSet={(events) => {
+              setCurrentEvents(events);
+            }}
+          />
         </Box>
       </Box>
     </Box>
