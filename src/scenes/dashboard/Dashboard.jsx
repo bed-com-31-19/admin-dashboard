@@ -75,12 +75,12 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StartBox
-            title="12,361"
-            subtitle="Emails Sent"
-            progress="0.75"
-            increase="14%"
+            title="431,221"
+            subtitle="Sales Obtained"
+            progress="0.5"
+            increase="21%"
             icon={
-              <EmailIcon
+              <PointOfSaleIcon
                 sx={{
                   color: colors.greenAccent[600],
                   fontSize: "26px",
@@ -97,12 +97,12 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StartBox
-            title="12,361"
-            subtitle="Emails Sent"
-            progress="0.75"
-            increase="14%"
+            title="32,441"
+            subtitle="New clients"
+            progress="0.30"
+            increase="+5%"
             icon={
-              <EmailIcon
+              <PersonAddIcon
                 sx={{
                   color: colors.greenAccent[600],
                   fontSize: "26px",
@@ -119,12 +119,12 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StartBox
-            title="12,361"
-            subtitle="Emails Sent"
+            title="1,325,134"
+            subtitle="Traffic Inbound"
             progress="0.75"
-            increase="14%"
+            increase="43%"
             icon={
-              <EmailIcon
+              <TrafficIcon
                 sx={{
                   color: colors.greenAccent[600],
                   fontSize: "26px",
