@@ -10,10 +10,10 @@ import Contact from "./scenes/contacts/Contact";
 import Invoice from "./scenes/invoices/Invoice";
 import Form from "./scenes/form/Form";
 import Calendar from "./scenes/calendar/Calendar";
+import FAQ from "./scenes/faq/FAQ";
 // import Bar from "./scenes/Bar";
 // import Line from "./scenes/Line";
 // import Pie from "./scenes/Pie";
-
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -25,7 +25,6 @@ function App() {
           <SideBar />
           <main className="content">
             <TopBar />
-
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/team" element={<Team />} />
@@ -33,10 +32,10 @@ function App() {
               <Route path="/invoices" element={<Invoice />} />
               <Route path="/form" element={<Form />} />
               <Route path="/calendar" element={<Calendar />} />
+              <Route path="/faq" element={<FAQ />} />
               {/* <Route path="/bar" element={<Bar />} /> */}
               {/* <Route path="/pie" element={<Pie/>} /> */}
               {/* <Route path="/line" element={<Line />} /> */}
-              {/* <Route path="/faq" element={<FAQ/>} /> */}
               {/* <Route path="/geography" element={<Geography/>} /> */}
             </Routes>
           </main>
