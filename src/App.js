@@ -9,10 +9,10 @@ import Team from "./scenes/team/Team";
 import Contact from "./scenes/contacts/Contact";
 import Invoice from "./scenes/invoices/Invoice";
 import Form from "./scenes/form/Form";
+import Calendar from "./scenes/calendar/Calendar";
 // import Bar from "./scenes/Bar";
 // import Line from "./scenes/Line";
 // import Pie from "./scenes/Pie";
-// import Calendar from "./scenes/Calendar";
 
 
 function App() {
@@ -29,14 +29,14 @@ function App() {
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/team" element={<Team />} />
-              <Route path="/contacts" element={<Contact/>} />
+              <Route path="/contacts" element={<Contact />} />
               <Route path="/invoices" element={<Invoice />} />
               <Route path="/form" element={<Form />} />
+              <Route path="/calender" element={<Calendar />} />
               {/* <Route path="/bar" element={<Bar />} /> */}
               {/* <Route path="/pie" element={<Pie/>} /> */}
               {/* <Route path="/line" element={<Line />} /> */}
               {/* <Route path="/faq" element={<FAQ/>} /> */}
-              {/* <Route path="/calender" element={<Calendar />} /> */}
               {/* <Route path="/geography" element={<Geography/>} /> */}
             </Routes>
           </main>

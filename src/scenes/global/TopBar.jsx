@@ -8,7 +8,6 @@ import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchIcon from "@mui/icons-material/Search";
-import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 
 const TopBar = () => {
   const theme = useTheme();
@@ -16,7 +15,7 @@ const TopBar = () => {
   const colorMode = useContext(ColorModeContext);
   return (
     <>
-      <Box display="flex" justifyContent="space-between" p={2} >
+      <Box display="flex" justifyContent="space-between" p={2}>
         <Box
           display="flex"
           backgroundColor={colors.primary[400]}
@@ -30,7 +29,11 @@ const TopBar = () => {
 
         <Box display="flex">
           <IconButton onClick={colorMode.toggleColorMode}>
-            {theme.palette.mode === "dark" ? (<DarkModeOutlinedIcon />) :( <LightModeOutlinedIcon />)}
+            {theme.palette.mode === "dark" ? (
+              <DarkModeOutlinedIcon />
+            ) : (
+              <LightModeOutlinedIcon />
+            )}
           </IconButton>
           <IconButton>
             <NotificationsOutlinedIcon />
