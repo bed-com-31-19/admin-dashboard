@@ -135,7 +135,55 @@ const Dashboard = () => {
           />
         </Box>
 
-        {/*  */}
+        {/* ROW 2 */}
+
+        <Box
+          gridColumn="span 8"
+          gridRow="span 2"
+          backgroundColor={colors.primary[400]}
+        >
+          <Box
+            mt="25px"
+            p="0 30px"
+            display="flex"
+            justifyContent="space-between"
+            alignItems="center"
+          >
+            <Box>
+              <Typography
+                variant="h3"
+                fontWeight="600"
+                color={colors.grey[100]}
+              >
+                Revenue Generated
+              </Typography>
+              <Typography
+                variant="h4"
+                fontWeight="500"
+                color={colors.greenAccent[400]}
+              >
+                MKW 43,263,847
+              </Typography>
+            </Box>
+            <Box>
+              <IconButton>
+                <DownloadOutlinedIcon
+                  sx={{
+                    fontSize: "26px",
+                    color: colors.greenAccent[500]
+                  }}
+                />
+              </IconButton>
+            </Box>
+          </Box>
+
+          <Box height="250px" ml="20px"
+          >
+            <LineChart isDashboard={true} />
+          </Box>
+
+          
+        </Box>
       </Box>
     </Box>
   );
